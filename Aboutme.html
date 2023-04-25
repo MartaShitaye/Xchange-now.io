@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>About Me</title>
+    <style>
+        
+        body {
+            background: linear-gradient(to top,#4fab75, #577b6d);
+            margin: 0;
+            padding: 0;
+            font-family: "Lucida Console", "Courier New", monospace;
+
+        }
+        
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        #backpic{
+            background: url(images/project.MOV) right bottom no-repeat;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+              grid-gap: 10px;
+                background:none;
+                  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+            
+        
+        img {
+  border: 1px solid #272231;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+  height: 500px;
+  
+
+ 
+}
+        
+        
+        .left-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        
+        /* Define styles for the right column */
+        .right-column {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .item1 {
+  grid-area: 2 / 1 / span 2 / span 3;
+  animation: mymove 5s infinite;
+}
+#myDIV {
+  text-decoration: underline;
+  animation: mymove1 5s infinite;
+}
+
+@keyframes mymove1 {
+  50% {grid-area: 1 / 2 / span 3 / span 2;
+  text-decoration-color: rgb(130, 34, 42);
+}
+}
+#myImg {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation: mymove 5s infinite;
+} 
+@keyframes mymove {
+  0% {
+    object-position: 0% 0%;
+  }
+  25% {
+    object-position: 20% 0%;
+  }
+  100% {
+    object-position: 100% 100%;
+  }
+}
+        
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        
+        a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        a:hover {
+            background-color: #ddd;
+        }
+.frame-div{
+  width: auto;
+  padding: 25px;
+  border: 5px solid black;
+
+
+        }
+        nav ul {
+    
+    list-style-type: none;
+    margin: 0px 5px;
+    border-radius: 5%;
+    align-content: center;
+    padding: 10px;
+    display: flex;
+    
+}
+nav li {
+    margin-left: 20px;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+        
+footer {
+    background-color:  #1c1c2092;
+    color: #fff;
+    border-radius: 5%;
+    border-color: #8a8282;
+  
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+            <li> <a href="Home.html" class="nav-link"><i class="material-icons"> home </i> </a> </li> </li> 
+            <li><a href="Settings.html" class="nav-link" class="sticky"> <i class="material-icons">settings</i> </a></li>                
+            <li><a href="SignUp.html" class="nav-link"><i class="material-icons"> shopping_cart</i></a></li>
+            <li><a href="Profile.html" class="nav-link"><i class="material-icons"> person</i></a></li>
+
+        </ul>
+    </header>
+    <div class="frame-div">
+    <div class="grid-container">
+    <main>
+        <div class="left-column">
+            <img src="images/mypic.jpg" alt="Profile Picture" id="myImg" width="300" height="300">
+            <div id="myDIV">
+            <p>Hello! My name is Marta Shitaye and I am a Computer Science student based in Riverside, CA. <br><br> I specialize in web development and I am passionate about creating clean, elegant and efficient code that delivers a great user experience. <br> <br>Please feel free to contact me if you have any questions or if you are interested in working together!</p>
+            <br>
+            <p><a href="ContactUs.html" class="nav-link"><i class="material-icons"> call</i></a> </p> 
+            <br>
+            <p><a href="Profile.html" class="nav-link"><i class="material-icons"> person</i></a> </p> 
+                
+                  </div>
+        </div>
+        </div>
+        
+             
+              
+
+    </div>
+    <div class="frame-div">
+    
+        <h1>Marta Shitaye</h1>
+        <p>As a computer science student with a passion for technology, I am constantly seeking new opportunities to grow and learn. <br> I have gained expertise in various programming languages, project management, data structures, leadership skills, and marketing through projects and clubs I am involved in. Outside of work, I enjoy reading about new technologies to stay up to date and solving complex problems by playing games like sudoku or chess and I am also involved in intermural soccer to play with my friends. I am excited to contribute my skills and knowledge to make a meaningful impact in the field of computer science</p>
+    
+        <div class="right-column">
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Marta Shitaye</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>Riverside, CA</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Shitayemarta@gmail.com</td>
+                </tr>
+            </table>
+            </div>
+            
+            <table>
+                <tr>
+                    <th> Skills</th>
+                    <th> projects</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Web design EGR223</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Alarm</td>
+                </tr>
+                <tr>
+                    <td>language skills</td>
+                    <td>Project presentation</td>
+               </tr>
+               <tr>
+                    <td>Excel</td>
+                    <td>EGR324 project</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Tic tac toe</td>
+                </tr>
+</table>
+</div>
+</div>
+<div class="frame-div">
+<div float="right" class="right-column">
+
+    <h2> My favorite projects!</h2>
+</div>
+
+<div  class="responsive">
+
+    <video  controls="controls" width="600" height="500" name="Video Name">
+        <source src="images/project.MOV">           
+      </video>
+       
+
+      <video  controls="controls" width="600" height="500" name="Video Name">
+        <source src="images/myproject.MP4">         
+      </video> 
+     
+           
+      
+      </div>
+    </div>
+
+
+
+</main>
+
+<footer>
+    <div class="footer">
+        <nav>
+   
+        <div class="responsive1">
+         <li><p> <a href="SignUp.html" class="nav-link"><i class="material-icons"> login</i></a><a href="ContactUs.html" class="nav-link"><i class="material-icons"> call</i></a></li> &copy;2023 Xchange, Inc. All rights reserved. </p>
+            </div>
+            </nav>
+       
+    </footer>
+</body>
+</html>

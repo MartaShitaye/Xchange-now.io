@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Page</title>
+  </head>
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  background-color: #07161b;
+  color: #2a6f30;
+  border: #040d10;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+
+}
+header {
+    background-color: #1c1c2092;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 20px;
+}
+    .chat-container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.chat-header {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.chat-messages {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 350px;
+}
+
+.message {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  background-color: #d5f5e3;
+  float: right;
+}
+
+.message.received {
+  background-color: #f8f8f8;
+  float: left;
+}
+
+.timestamp {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.chat-input {
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-input input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+  </style>
+  <body>
+    <div id="chat-box">
+     
+    
+    <div class="chat-container">
+        <div class="chat-header">
+          <h3>Chatting with John Doe</h3>
+        </div>
+        <div class="chat-messages">
+          <div class="message received">
+            <p>Hi, I'm interested in your item. Can you tell me more about it?</p>
+            <span class="timestamp">9:30am</span>
+          </div>
+          <div class="message sent">
+            <p>Sure, it's in great condition and works perfectly.</p>
+            <span class="timestamp">9:35am</span>
+          </div>
+          <div class="message received">
+            <p>Would you be willing to take $50 for it?</p>
+            <span class="timestamp">9:40am</span>
+          </div>
+          <div class="message sent">
+            <p>Sorry, I'm really looking for at least $75.</p>
+            <span class="timestamp">9:45am</span>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Type a message...">
+          <button>Send</button>
+        </div>
+      </div>
+    <script src="chat.js"></script>
+
+    <footer>
+        
+      <div class="footer">
+        <nav>
+        <div class="responsive1">
+          <p> <ul> <li> <a href="SignUp.html" class="nav-link"><i class="material-icons"> login</i></a></li></ul> 
+              <ul> <li> <a href="ContactUs.html" class="nav-link"><i class="material-icons"> call</i></a></li></ul>
+              <ul><li> <a href="Aboutme.html" class="nav-link"><i class="material-icons"> help </i> </a> </li> </li> </ul>
+              &copy;2023 Xchange, Inc. All rights reserved. </p>
+              </div>
+              </nav>
+             
+              
+      </footer>
+  </body>
+</html>
